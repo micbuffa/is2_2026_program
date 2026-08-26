@@ -1,0 +1,7 @@
+Date,Day,Start,End,Session title,Session type,Track,Submission ID,Contribution title,Authors,Location,Chair / contact,Abstract / notes,Web visible,Sort order
+2026-10-28,Wednesday,09:00,09:30,Opening,Opening,,,,,Amphithéâtre 38,,,TRUE,10
+2026-10-28,Wednesday,09:30,10:45,Networked Music Systems,Paper,IEEE IS2 2026,42,Example main-track contribution,Alice Author; Bob Researcher,Amphithéâtre 38,Session Chair,Example details shown in the drawer.,TRUE,20
+2026-10-28,Wednesday,11:15,12:30,Immersive Web Audio,Workshop paper,IWMM 2026,51,Example IWMM contribution,Carol Author; David Researcher,Amphithéâtre 38,Workshop Chair,,TRUE,30
+2026-10-28,Wednesday,17:30,19:00,Music performances,Performance,IS2 2026 PSI,77,Example performance,Eve Performer,Grand Plateau,,Performance details.,TRUE,40
+2026-10-29,Thursday,14:00,15:30,Demo session,Demo,IS2 2026-Demos,88,Example browser audio demo,Frank Developer,First floor rooms,,,TRUE,50
+2026-10-29,Thursday,19:30,22:30,Social event,Social event,,,,,La Siesta,,,TRUE,60

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#17365d" />
+  <meta name="color-scheme" content="light dark" />
+  <title>IEEE IS2 2026 — Program</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <p id="conferenceName" class="eyebrow">7th IEEE International Symposium on the Internet of Sounds</p>
+      <h1 id="conferenceShortName">IEEE IS2 2026 <span>Program</span></h1>
+      <p class="conference-meta"><span id="conferenceCity">Cannes, France</span> · <span id="conferenceDates">28–30 October 2026</span></p>
+    </div>
+    <button id="jumpNow" class="now-button" type="button" hidden>Now</button>
+  </div>
+</header>
+
+<div class="mobile-filter-bar" aria-label="Mobile program controls">
+  <button id="openFilters" class="filter-button" type="button" aria-controls="filtersPanel" aria-expanded="false">
+    Filters <span id="activeFilterCount" class="count" hidden>0</span>
+  </button>
+  <button id="mobileClear" class="secondary-button" type="button">Reset</button>
+</div>
+
+<main class="wrap">
+  <section id="filtersPanel" class="filters" aria-label="Program filters">
+    <div class="filters-heading">
+      <strong>Filter program</strong>
+      <button id="closeFilters" class="icon-button" type="button" aria-label="Close filters">×</button>
+    </div>
+
+    <label>Day
+      <select id="dayFilter"><option value="">All days</option></select>
+    </label>
+    <label>Type
+      <select id="typeFilter"><option value="">All types</option></select>
+    </label>
+    <label>Track
+      <select id="trackFilter"><option value="">All tracks</option></select>
+    </label>
+    <label>Location
+      <select id="locationFilter"><option value="">All locations</option></select>
+    </label>
+    <label class="search">Search
+      <input id="searchFilter" type="search" placeholder="Author, title, session…" autocomplete="off" />
+    </label>
+    <button id="clearFilters" class="clear-button" type="button">Clear filters</button>
+  </section>
+
+  <div class="program-toolbar">
+    <div id="status" class="status" role="status" aria-live="polite">Loading program…</div>
+    <div class="view-switch" role="group" aria-label="Program density">
+      <button id="comfortableView" type="button" class="active">Comfortable</button>
+      <button id="compactView" type="button">Compact</button>
+    </div>
+  </div>
+
+  <section id="program" class="program" aria-label="Conference program"></section>
+
+  <section class="legend" aria-labelledby="locationsTitle">
+    <h2 id="locationsTitle">Locations</h2>
+    <div id="locationLegend" class="legend-grid"></div>
+  </section>
+</main>
+
+<div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
+<aside id="detailsDrawer" class="drawer" aria-label="Program item details" aria-hidden="true">
+  <div class="drawer-handle" aria-hidden="true"></div>
+  <div class="drawer-header">
+    <div id="drawerBadges" class="badges"></div>
+    <button id="closeDrawer" class="icon-button" type="button" aria-label="Close details">×</button>
+  </div>
+  <div id="drawerContent" class="drawer-content"></div>
+</aside>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
